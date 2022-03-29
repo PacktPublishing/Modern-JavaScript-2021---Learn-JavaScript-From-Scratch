@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+First Name: <input name="fname" type="text" value="Michael"><br>
+First Name: <input name="fname" type="text" value="Doug">
+
+<button onclick="myFunction()">TagName</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByName("fname")[0].tagName;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

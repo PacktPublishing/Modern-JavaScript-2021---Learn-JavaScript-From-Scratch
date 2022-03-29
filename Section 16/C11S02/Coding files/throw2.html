@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+    <script>
+
+let number = 5;
+
+try{ 
+  throw new Error("This is a new throw");
+       	
+}
+
+   catch(error){
+
+console.log("An error caught");
+
+if(number + 8 > 10){
+
+console.log("Error message : " + error );
+console.log("Error resolved");
+
+   } else{
+
+throw new Error("The number is low"); 
+}
+
+}
+
+        
+</script>
+ 
+</body>
+</html>
+ 

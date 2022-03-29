@@ -1,0 +1,26 @@
+<html>
+<body>
+<p id="demo"></p>
+<script>
+var catName = "rocky";
+var catColor = "orange";
+function getCat() {
+  return this.catName + ' is ' + this.catColor;
+}
+var cat = {
+  catName = "Jerry",
+  catColor = "gray",
+  getCat: function() {
+    return this.catName + ' is ' + this.catColor;
+  }
+}
+
+console.log('Cat in global scope', getCat());
+ // output:“rocky is orange” 
+
+console.log('Cat in object scope', cat.getCat());
+ // output:“Jerry is gray” .
+
+</script>
+</body>
+</html>

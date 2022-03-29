@@ -1,0 +1,27 @@
+<html>
+<body>
+<p id="demo"></p>
+<script>
+function Person () {
+    this.name = 'John',
+    this.age = 23
+}
+
+
+let person1 = new Person();
+let person2 = new Person();
+
+person1.gender = 'male';
+
+person1.greet = function () {
+    console.log('hello');
+}
+
+person1.greet();   // hello
+
+person2.greet();
+
+
+</script> 
+</body>
+</html>

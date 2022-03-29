@@ -1,0 +1,17 @@
+<html>
+<body>
+<p id="demo"></p>
+<script>
+// Create an object:
+var person = {
+  firstName: "will",
+  lastName : "smith",
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+// Display data from the object:
+document.getElementById("demo").innerHTML = person.fullName();
+</script>
+</body>
+</html>

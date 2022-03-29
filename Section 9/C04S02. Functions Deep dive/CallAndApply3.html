@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      let fullname = function (city, state) {
+        console.log(
+          this.firstname + " " + this.lastname + " from " + city + ", " + state
+        );
+      };
+      let name = {
+        firstname: "John",
+        lastname: "smith",
+      };
+      fullname.call(name, "Mumbai", "Maharashtra");
+
+      let name2 = {
+        firstname: "Monica",
+        lastname: "Geller",
+      };
+      fullname.call(name2, "Newyork", "USA");
+    </script>
+  </body>
+</html>

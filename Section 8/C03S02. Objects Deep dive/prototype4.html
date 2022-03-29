@@ -1,0 +1,22 @@
+<html>
+<body>
+<p id="demo"></p>
+<script>
+function Person (givenName) {
+this.name=givenName
+
+}
+
+
+Person.prototype.getName = function(){
+return this.name;
+}
+
+let person1 = new Person("John");
+console.log(person1);
+
+
+
+</script> 
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<p>You can use the return value to convert the string to a date object:</p>
+ 
+<p id="demo"></p>
+ 
+<script>
+let msec = Date.parse("March 21, 2012");
+const d = new Date(msec);
+document.getElementById("demo").innerHTML = d;
+</script>
+ 
+</body>
+</html>

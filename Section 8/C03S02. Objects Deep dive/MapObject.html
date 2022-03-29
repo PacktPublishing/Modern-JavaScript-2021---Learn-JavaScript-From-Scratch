@@ -1,0 +1,71 @@
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const myMap1 = new Map();
+console.log(myMap1);
+
+const myMap = new Map();
+
+//setting keys to the object
+
+const key1 = 'mystr',  key2 = { }, key3 = function(){ }; 
+
+//setting values to the keys of Map object
+
+myMap.set(key1 , 'This is a string');
+myMap.set(key2, 'This is a blank object');
+myMap.set(key3, 'This is an empty function');
+
+console.log(myMap);
+
+//Getting the values from the myMap object
+
+let value1 = myMap.get(key1);
+console.log(value1);
+
+let value2 = myMap.get(key2);
+console.log(value2);
+
+//Getting the size
+console.log(myMap.size);
+
+//iteration
+
+for(let [key, value] of myMap){
+ 
+ console.log(key, value);  
+ 
+ }
+ 
+
+ //Iterating through keys
+ for(let key of myMap.keys()){
+
+console.log(key);
+
+}
+//Iterating through values
+for(let value of myMap.values()){
+
+console.log(value);
+
+}
+//iteration using forEach
+myMap.forEach((value, key)=>{
+
+console.log('key is ' , key);
+console.log('value is ' , value);
+})
+
+
+//Converting to array
+let myArray = Array.from(myMap);
+
+console.log('Map to array is ' , myArray);
+
+
+
+</script> 
+</body>
+</html>

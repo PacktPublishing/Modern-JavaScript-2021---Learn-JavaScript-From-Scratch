@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+const numbers = [20.5, 2.3, 1.1, 4.7];
+ 
+document.write(numbers.reduce(getSum, 0));
+function getSum(total, num) {
+  return total + Math.round(num);
+}
+</script>
+</body>
+</html>

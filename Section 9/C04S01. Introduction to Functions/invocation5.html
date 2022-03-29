@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const myObject = {
+        firstName: "John",
+        lastName: "Smith",
+        fullName: function () {
+          return this.firstName + " " + this.lastName;
+        },
+      };
+      document.write(myObject.fullName());
+    </script>
+  </body>
+</html>

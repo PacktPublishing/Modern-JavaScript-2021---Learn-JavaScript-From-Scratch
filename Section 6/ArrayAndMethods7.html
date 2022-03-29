@@ -1,0 +1,27 @@
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let marks= [ 50, 80, 75, 90];
+	let value= marks.indexOf(80);
+	console.log(value);
+    marks.push(99);
+    console.log(marks);
+	marks.unshift(99);
+    console.log(marks);
+    marks.pop();
+    console.log(marks);
+    marks.shift();
+	console.log(marks);
+
+    let marks1= [ 50, 80, 75, 90, 99, 45];
+	marks.splice(1, 3);
+	console.log(marks1);
+
+	let marks3= [ 50, 80, 75, 90];
+	marks3.reverse();
+	console.log(marks3);
+
+</script> 
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      let fullname = function () {
+        console.log(this.firstname + " " + this.lastname);
+      };
+      let name = {
+        firstname: "John",
+        lastname: "smith",
+      };
+      fullname.call(name);
+
+      let name2 = {
+        firstname: "Monica",
+        lastname: "Geller",
+      };
+      fullname.call(name2);
+    </script>
+  </body>
+</html>

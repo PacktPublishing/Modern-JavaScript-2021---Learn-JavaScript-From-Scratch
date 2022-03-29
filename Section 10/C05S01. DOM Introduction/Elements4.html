@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+ 
+ 
+<p class="intro">Hello World!.</p>
+<p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+ 
+<p id="demo"></p>
+ 
+<script>
+const x = document.querySelectorAll("p.intro");
+document.getElementById("demo").innerHTML = 
+'The first paragraph (index 0) with class="intro" is: ' + x[0].innerHTML;
+</script>
+ 
+</body>
+</html>
+ 

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<h2>Looping Object Properties</h2>
+<p id="demo"></p>
+ 
+<script>
+const myJSON = '{"name":"John", "age":30, "car":null}';
+const myObj = JSON.parse(myJSON);
+ 
+let text = "";
+for (let x in myObj) {
+  text += x + ", ";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+ 
+</body>
+</html>
